@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm div-centred">
+            <img src="assets/img/burger.jpg" height="200" width="200" />
+            <h3>Eat-Da-Burger!</h3>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                    <div class="row">
+                        <div class="col-6">
+                          {{id}}. {{burger_name}}
+                        </div>
+                        <div class="col-6">
+                            <button burgerId={{id}} class="devour">Devour it!</button>
+                        </div>
+                    </div>
+                </li>
+
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                    {{burger_name}}
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm div-centred">
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control" id="text-area" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <p>Enter a burger you want to eat Click the "submit" button</p>
+            </form>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+</div>

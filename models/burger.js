@@ -7,9 +7,9 @@ const burger = {
             cb(res);
         })
     },
-    create : function(name, dev, cb){
-        let burgerCols = ["burger_name", "devoured"];
-        let burgerVals = [name, dev];
+    create : function(name, cb){
+        let burgerCols = ["burger_name"];
+        let burgerVals = [name];
         orm.create("burger", burgerCols, burgerVals, function(res){
             cb(res);
         })
