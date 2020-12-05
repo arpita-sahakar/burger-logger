@@ -20,10 +20,13 @@ The app will store every burger in a database, whether devoured or not.
 
 ## Screen shots
 
-
 ![Burger logger screen1](./public/assets/img/screenShot1.JPG)
 
 ![Burger logger screen2](./public/assets/img/screenShot2.JPG)
+
+## Live application
+
+[Click here!!!](https://peaceful-sands-93325.herokuapp.com)
 
 
   ## Table of Contents
