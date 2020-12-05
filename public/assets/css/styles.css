@@ -9,3 +9,11 @@ body {
  .div-centred{
      text-align: center;
  }
+
+ li {
+   margin-bottom : 5px;
+ }
+
+ .burger-name {
+   font-weight: 600 ;
+ }

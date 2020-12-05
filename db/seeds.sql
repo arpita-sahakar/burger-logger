@@ -1,4 +1,4 @@
-
+-- inserted dummy values into the tables--
 insert into burger (burger_name) values ("ham-burger");
 insert into burger (burger_name) values ("beef-burger");
 
